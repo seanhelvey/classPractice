@@ -7,6 +7,6 @@ $(document).ready(function() {
 		$(".dissapear").toggle();
 	});
 	$("#flip").click(function(){
-    $("#panel").slideDown("slow");
+    $("#panel").slideToggle("slow");
   });
 });
