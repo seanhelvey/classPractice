@@ -6,7 +6,10 @@ $(document).ready(function() {
 	$("#ptoggler").click(function(){
 		$(".dissapear").toggle();
 	});
-	$("#flip").click(function(){
-    $("#panel").slideToggle("slow");
+   var q;
+   for(q=1; q<4; q++)
+
+	$("#q"+ q).click(function(){
+    $("#a").slideToggle("slow");
   });
 });
