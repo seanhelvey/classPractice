@@ -6,12 +6,8 @@ $(document).ready(function() {
 	$("#ptoggler").click(function(){
 		$(".dissapear").toggle();
 	});
-   var q;
-   for(q=1; q<4; q++) {
-		console.log("q", q);
-		$("#q"+ q).click({qnum: q}, function(event){
-			console.log("event.data.qnum", event.data.qnum);			
-			$("#a"+ event.data.qnum).slideToggle("slow");
-		});
-	 }
+	$("#q1, #q2, #q3").click(function(event){
+		//slideToggle next sibling after element clicked
+		$(event.target).next().slideToggle("slow");
+	});
 });
