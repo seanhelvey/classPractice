@@ -9,9 +9,9 @@ $(document).ready(function() {
    var q;
    for(q=1; q<4; q++) {
 		console.log("q", q);
-		$("#q"+ q).click(function(){
-			console.log("q", q);
-			$("#a"+ q).slideToggle("slow");
+		$("#q"+ q).click({qnum: q}, function(event){
+			console.log("event.data.qnum", event.data.qnum);			
+			$("#a"+ event.data.qnum).slideToggle("slow");
 		});
 	 }
 });
