@@ -10,6 +10,6 @@ $(document).ready(function() {
    for(q=1; q<4; q++)
 
 	$("q"+ q).click(function(){
-    $(".panel").slideToggle("slow");
+    $("a").slideToggle("slow");
   });
 });
