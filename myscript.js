@@ -9,7 +9,7 @@ $(document).ready(function() {
    var q;
    for(q=1; q<4; q++)
 
-	$(".flip"+ q).click(function(){
+	$("q"+ q).click(function(){
     $(".panel").slideToggle("slow");
   });
 });
