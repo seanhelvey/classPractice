@@ -7,9 +7,11 @@ $(document).ready(function() {
 		$(".dissapear").toggle();
 	});
    var q;
-   for(q=1; q<4; q++)
-
-	$("#q"+ q).click(function(){
-    $("#a"+ q).slideToggle("slow");
-  });
+   for(q=1; q<4; q++) {
+		console.log("q", q);
+		$("#q"+ q).click(function(){
+			console.log("q", q);
+			$("#a"+ q).slideToggle("slow");
+		});
+	 }
 });
